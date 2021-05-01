@@ -85,7 +85,7 @@ h3{
     font-size: 14px;
     /*text-decoration:none;*/
     color: white;
-    
+
     background-color: #5569D4;
     padding: 20px 30px 20px 30px;
   }
@@ -107,4 +107,36 @@ h3{
 }
 .contnedorparrafo{
   width: 42%
+}
+
+.Contenedor-servicios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.servicios{
+  width: 29%;
+  padding: 18px 10px 18px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.violeta{
+  background: #5055df;
+}
+.celeste{
+  background: #40a8fa;
+}
+.servicios h4{
+  font-size: 30px;
+  margin: 0;
+}
+
+.servicios p{
+  font-size: 18px;
+}
+.servicios img{
+  float:right;
 }
