@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <title>Davis Sandoval - Diseñador Web</title>
     <link rel="stylesheet" href="Estilos.css">
-
     <link rel = "preconnect" href = "https://fonts.gstatic.com">
-<link href = "https://fonts.googleapis.com/css2? family = Poppins & display = swap" rel = "hoja de estilo ">
+    <link href = "https://fonts.googleapis.com/css2? family = Poppins & display = swap" rel = "hoja de estilo ">
 
-
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  </head>
 
   <body>
-    <header>
+  <header>
 <div class="Contenedor">
           <div class="menu">
         <p>Davis Sandoval</p>
@@ -38,13 +39,11 @@
 
 <!--arranca seccion sobre mi-->
 <section>
-
   <h3>Sobre mi</h3>
 
   <div class="contenedorsobremi">
     <img src="22.png" alt="Davis Sandoval" title="Davis" alt="400px" height="400px">
     <div class="contnedorparrafo">
-
     <p>Titulado de Ingeniería en Informática de la “Universidad Tecnológica de Chile” (Inacap-2019) y Licenciado en Educación y Pedagogía en ed. Física de la “Universidad Metropolitana de Ciencias de la Educación” (UMCE-2010).</p>
     <p> Dentro de mis competencias destacan la orientación a los resultados, capacidad de análisis y trabajo en equipo, los cuales he podido desarrollar a lo largo de mi carrera como educador. Entre mis intereses están el aprender continuamente y el resolver o enfrentar desafíos en el ámbito laboral, aplicando metodologías para el logro de los objetivos.
     </p><p>Actividades de interés en el tiempo libre: Trekking, natación, ciclismo, basquetbol, estudio de nuevas tecnologías, cine y vídeo juegos. </p>
@@ -58,9 +57,8 @@
 <!--arranca seccion servicios-->
 <section>
 
-    <h3>Servicios</h3>
+<h3>Servicios</h3>
 <div class="Contenedor-Servicios">
-
 
     <div class="Servicios violeta">
       <h4>Diseño web</h4>
@@ -74,7 +72,6 @@
         <img src="mobile.png">
       </div>
 
-
         <div class="Servicios violeta">
           <h4>SEO</h4>
           <p>paginas web atractivas</p>
@@ -83,7 +80,8 @@
 
         <div class="Servicios celeste">
             <h4>Autoadministrable</h4>
-            <p>paginas web atractivas</p>
+            <p>paginas web atractivassssss
+
             <img src="wordpress.png">
           </div>
 
@@ -98,11 +96,32 @@
                 <p>paginas web atractivas</p>
                 <img src="Marketing.png">
               </div>
-
-
   </div>
 </section>
 
-  </body>
+<section>
+  <div class="Contenedor">
+      <!-- Set up your HTML -->
+      <div class=".owl-carousel">
+        <div> <img src="foto1.jpg"> </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+      </div>
+  </div>
+</section>
 
+<script src="owlcarousel/jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+ $(".owl-carousel").owlCarousel();
+  });
+</script>
+
+  </body>
 </html>
