@@ -2,10 +2,12 @@ body{
 font-family:'Poppins', sans-serif;
 margin: 0;
 padding: 0;
+background-color: #F2F4F4;
 }
 
 p{
   font-size: 20px;
+
 }
 
 li{
@@ -74,8 +76,10 @@ header{
 */
 h3{
   text-align: center;
-  font-size: 55px;
+  font-size: 50px;
   font-weight: bold;
+  margin: 50;
+  /*background-color: #C6C7CA;*/
   }
 
 .button1{
@@ -101,7 +105,16 @@ h3{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-image:url(fondo.jpg);
+  height: 80vh;
 }
+
+/*.sobremi{
+  background-image:url(fondo.jpg);
+  height: 100vh;
+  /*height: inherit;
+} */
+
 .contnedorparrafo{
   width: 42%
 }
@@ -110,6 +123,8 @@ h3{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  /*background-image:url(fondox.jpg);
+  height: 100vh;*/
 }
 
 .servicios{
@@ -139,4 +154,219 @@ h3{
 }
 .servicios img{
   float:right;
+}
+
+span{
+  font-size: 60px;
+  color: blue;
+}
+
+.owl-nav{
+  text-align: center;
+}
+.contenedor-porque{
+  display: flex;
+  /*justify-content: center; o*/
+  justify-content: space-around;
+  text-align: center;
+}
+
+.contenedor-porque h4 {
+margin: 0;
+font-size: 20px;
+}
+.contenedor-porque p {
+font-size: 16px;
+line-height: 28px;
+}
+
+.porque-singular{
+  width: 28%;
+}
+
+#blog{
+  background: #F9FAFC:
+  padding-top: 50px;
+  padding-bottom: 50px;
+  }
+
+.contenedor-publicaciones{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.publicacion{
+  width: 30%;
+  box-shadow: 29px 19px 17px 10px rgba(0,0,0,0.83);
+  padding-bottom: 20px;
+  }
+/*  padding: 10px 10px 10px 10px !important;  sobrepone el padding anterior a este*/
+#blog img{
+  width: 100%
+
+}
+#blog h4{
+  font-size: 23px;
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+}
+#blog a{
+display:inline-block;
+margin-left: 20px;
+}
+.publicacion-2 {
+  width: 30%;
+  box-shadow: 29px 19px 17px 10px rgba(0,0,0,0.83);
+  padding-bottom: 20px;
+}
+.publicacion-2 img{
+    height: 250px;
+}
+
+#Charlemos{
+  background: linear-gradient(rgba(84,93,200,.94), rgba(96, 171, 245, .9));
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+}
+#Charlemos h3{
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+#Charlemos a{
+  font-size: 20px;
+  border: 1px solid #000000;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+padding: 15px 55px 15px 45px;
+transition: 2s;
+}
+
+#Charlemos a:hover{
+  color: black;
+  transition: 2s;
+  /*transform: scale(1.2);*/
+  transform: rotate(360deg);
+  display: inline-block;
+}
+
+#whatsapp a{
+  background: none;
+  position: fixed;
+  top: 85%;
+  right: 2%;
+}
+
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 480px){
+  /*se va aplicar cuando el maximo de ancho sea de 480px*/
+nav{
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  background: #5cb8ff;
+  width: 100%;
+  display: none;
+  }
+  nav .lista{
+    flex-direction: column;
+    display: flex;
+   }
+   .menu-icon{
+     display: block;
+     width: 25px;
+   }
+ .titular{
+  margin-top: 54px;
+  }
+     h1{
+       font-size: 49px;
+     }
+     h2{
+       font-size: 19px;
+     }
+
+     .contenedorsobremi{
+       flex-direction: column;
+       padding: 150px 20px 230px 30px;
+     }
+     .contnedorparrafo {
+     width: 90%;
+    }
+
+    .Contenedor-Servicios{
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .servicios{
+      width: 72%;
+      margin-bottom: 15px;
+
+    }
+
+
+    .contenedor-porque{
+      flex-direction: column;
+    }
+    .porque-singular{
+      width: 95%;
+    }
+    .contenedor-publicaciones{
+      flex-direction: column;
+    }
+    .publicacion{
+      width: 85%;
+      margin: auto;
+      padding-bottom: 30px;
+    }
+    .publicacion-2{
+      width: 85%;
+      margin: auto;
+    }
+    .imagen-sobremi{
+      width: 60%;
+    }
+}
+
+@media (min-width:700px)and (max-width:900px)  {
+  header{
+    height: 53vh;
+  }
+  nav{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    background: #5cb8ff;
+    width: 100%;
+    display: none;
+    }
+    nav .lista{
+      flex-direction: column;
+      display: flex;
+     }
+     .menu-icon{
+       display: block;
+       width: 25px;
+     }
+
+  .imagen-sobremi{
+    width: 50%;
+  }
+  .servicios{
+    width: 44%
+  }
+  .publicacion-2{
+    width: 60%;
+    margin: auto;
+    margin-left: 30px;
+  }
+  .publicacion{
+    width: 62%;
+  }
 }

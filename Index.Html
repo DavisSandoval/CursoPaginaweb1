@@ -9,6 +9,11 @@
 
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+</script>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
   </head>
 
   <body>
@@ -16,6 +21,7 @@
 <div class="Contenedor">
           <div class="menu">
         <p>Davis Sandoval</p>
+        <img class="menu-icon" src="menu.png">
         <nav>
           <ul class="lista">
             <li>Sobre Mi</li>
@@ -39,10 +45,9 @@
 
 <!--arranca seccion sobre mi-->
 <section>
-  <h3>Sobre mi</h3>
-
+  <h3 class="mi">Sobre mi</h3>
   <div class="contenedorsobremi">
-    <img src="22.png" alt="Davis Sandoval" title="Davis" alt="400px" height="400px">
+    <img class="imagen-sobremi"src="22.png" alt="Davis Sandoval" title="Davis" alt="400px" height="400px" >
     <div class="contnedorparrafo">
     <p>Titulado de Ingeniería en Informática de la “Universidad Tecnológica de Chile” (Inacap-2019) y Licenciado en Educación y Pedagogía en ed. Física de la “Universidad Metropolitana de Ciencias de la Educación” (UMCE-2010).</p>
     <p> Dentro de mis competencias destacan la orientación a los resultados, capacidad de análisis y trabajo en equipo, los cuales he podido desarrollar a lo largo de mi carrera como educador. Entre mis intereses están el aprender continuamente y el resolver o enfrentar desafíos en el ámbito laboral, aplicando metodologías para el logro de los objetivos.
@@ -100,27 +105,113 @@
 </section>
 
 <section>
-  <div class="Contenedor">
+    <div class="Contenedor">
+        <h3>Mis Trabajos</h3>
       <!-- Set up your HTML -->
-      <div class=".owl-carousel">
+      <div class="owl-carousel">
         <div> <img src="foto1.jpg"> </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
-        <div> Your Content </div>
+          <div> <img src="foto2.jpg"> </div>
+            <div> <img src="foto3.jpg"> </div>
+              <div> <img src="foto4.jpg"> </div>
+                <div> <img src="foto5.jpg"> </div>
       </div>
   </div>
 </section>
+<section>
+  <div class="contenedor">
+    <h3>¿Porque trabajar conmigo?</h3>
+    <div class="contenedor-porque">
 
-<script src="owlcarousel/jquery.min.js"></script>
+      <div class="porque-singular">
+        <img src="velocidad.png" alt="">
+        <h4>Velocidad</h4>
+        <p>Me asegurp que tu web carge de 2 a 4 segundos </p>
+      </div>
+
+      <div class="porque-singular">
+        <img src="mantenimiento.png" alt="">
+        <h4>Mantenimiento</h4>
+        <p>Me asegurp que tu web carge de 2 a 4 segundos </p>
+      </div>
+
+      <div class="porque-singular">
+        <img src="mobile2.png" alt="">
+        <h4>Mobile Priority</h4>
+        <p>Me asegurp que tu web carge de 2 a 4 segundos </p>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</section>
+
+<section id="blog">
+  <div class="contenedor">
+    <h3>Blog</h3>
+    <div class="contenedor-publicaciones">
+      <div class="publicacion">
+          <img src="blog1.jpg">
+          <h4>No alcanza con tener solamente una pagina web</h4>
+          <p>No alcanza con tener solamente una pagina web</p>
+          <a>Leer mas <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="publicacion-2">
+          <img src="blog2.jpg">
+          <h4>¿Que es el remarketing y como utilzarlo?</h4>
+            <p>¡Que es el remarketing y como utilzarlo</p>
+            <a>Leer mas <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="Charlemos">
+  <div class="contenedor">
+    <h3>¿Que esperas para tener tu pagína web?</h3>
+    <a>Charlemos</a>
+  </div>
+</section>
+
+<section id="whatsapp">
+<a href="https://wa.me/56955275768" target="_blank">
+<img src="whatsapp.png" alt="">
+</a>
+</section>
+
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
 <script src="owlcarousel/owl.carousel.min.js"></script>
 
 <script>
- $(document).ready(function(){
- $(".owl-carousel").owlCarousel();
-  });
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
+$('.menu-icon').click(function(){
+  $('header nav').slideToggle();
+})
+
 </script>
 
   </body>
